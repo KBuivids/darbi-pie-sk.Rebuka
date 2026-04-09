@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIVIR Restaurant</title>
+
+<style>
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #02060d;
+}
+
+/* NAVBAR */
+header {
+  background-color: #02060d;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+nav .logo {
+  max-width: 150px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background-color: #183059;
+  border-radius: 5px;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(39, 111, 191, 0.7); /* #276FBF */
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.hero-text a {
+  display: inline-block;
+  background-color: #02060d;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero-text a:hover {
+  background-color: #183059;
+}
+
+/* SPECIALS / DESSERTS */
+#specials {
+  background-color: #276FBF;
+  padding: 60px 20px;
+  text-align: center;
+}
+#specials h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+.special-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.special-item {
+  background-color: #02060d;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+}
+.special-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.special-item h3 {
+  padding: 15px 10px 0 10px;
+  font-size: 1.5em;
+}
+.special-item p {
+  padding: 10px;
+  font-size: 1em;
+}
+
+/* GALLERY / SUSHI */
+#gallery {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #183059;
+}
+#gallery h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.gallery-images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+#contact {
+  background-color: #276FBF;
+  padding: 60px 20px;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #02060d;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+  .special-items, .gallery-images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width: 600px){
+  .hero-text h1 {
+    font-size: 2em;
+  }
+  .hero-text a {
+    padding: 10px 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER + NAVBAR -->
+<header>
+  <nav>
+    <img class="logo" src="https://via.placeholder.com/150x50?text=Logo" alt="RIVIR Logo">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#specials">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<main>
+<section class="hero" id="hero">
+  <img src="https://images.squarespace-cdn.com/content/v1/639860e8ed9a3e0d73ce0e15/4487f409-6860-4a84-9b32-bf317cb3eb3d/blue-seafood-and-bistro.jpg" alt="Restaurant main image">
+  <div class="hero-text">
+    <h1>WELCOME TO OUR RESTAURANT</h1>
+    <a href="#specials">ORDER NOW</a>
+  </div>
+</section>
+
+<!-- SPECIALS / DESSERTS -->
+<section id="specials">
+  <h2>Our Specials - Desserts</h2>
+  <div class="special-items">
+    <div class="special-item">
+      <img src="https://sugarspunrun.com/wp-content/uploads/2024/01/Chocolate-cake-recipe-1-of-1-copy.jpg" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p>Rich chocolate cake with berries and chocolate glaze.</p>
+    </div>
+    <div class="special-item">
+      <img src="https://www.cookingclassy.com/wp-content/uploads/2022/08/tiramisu-17.jpg" alt="Tiramisu">
+      <h3>Tiramisu</h3>
+      <p>Classic Italian dessert with mascarpone and coffee.</p>
+    </div>
+    <div class="special-item">
+      <img src="https://sugarspunrun.com/wp-content/uploads/2023/03/Chocolate-Macarons-Recipe-1-of-1.jpg" alt="Macaron Dessert">
+      <h3>Macaron Dessert</h3>
+      <p>Colorful French macarons with creamy filling.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY / SUSHI -->
+<section id="gallery">
+  <h2>Gallery - Sushi</h2>
+  <div class="gallery-images">
+    <img src="https://www.craftycookbook.com/wp-content/uploads/2024/03/img_4838-1.jpg" alt="Tobiko Calfornia roll sushi">
+    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=400&h=300&q=80" alt="Sushi boat">
+    <img src="https://seafoodbysykes.com/wp-content/uploads/Smoked-salmon-vegetable-sushi-500x500.jpg" alt="Smoked Salmon and Vegetable Sushi">
+    <img src="https://assets.tmecosys.cn/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/64EF898D-2EDD-4B47-A456-E6A7D137AC91/Derivates/00f76cac-64f6-4573-be4f-e604a7d99143.jpg" alt="Nigiri sushi">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p>Address: Riga Street 1, Riga, LV</p>
+    <p>Phone: +371 12345678</p>
+    <p>Email: info@rivir.lv</p>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  ©2026 RIVIR, Booked every night.
+</footer>
+</body>
+</html>
