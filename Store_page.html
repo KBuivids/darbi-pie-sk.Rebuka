@@ -3,89 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>UrbanVault Store</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#E6E8E6;
-color:#191919;
-}
-
-header{
-background:#191919;
-color:white;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-size:18px;
-}
-
-nav a:hover{
-color:#BB7E8C;
-}
-
-.store-title{
-text-align:center;
-margin:40px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-padding:40px;
-}
-
-.product{
-background:white;
-padding:20px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-.product img{
-width:100%;
-border-radius:8px;
-}
-
-button{
-background:#3A6EA5;
-color:white;
-border:none;
-padding:10px 20px;
-cursor:pointer;
-border-radius:5px;
-margin-top:10px;
-}
-
-button:hover{
-background:#BB7E8C;
-}
-
-footer{
-background:#191919;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
+<link rel="stylesheet" href="Store_page.css">
 </head>
 
 <body>
-
 <header>
-
 <div class="logo">
 <h2>UrbanVault</h2>
 </div>
@@ -98,6 +20,17 @@ padding:20px;
 </header>
 
 <h1 class="store-title">Shop</h1>
+
+<div class="filter-container">
+    <input type="text" placeholder="Search products...">
+    <select name="category">
+        <option value="">All Categories</option>
+        <option value="shoes">Shoes</option>
+        <option value="clothing">Clothing</option>
+        <option value="accessories">Accessories</option>
+    </select>
+    <button class="search-btn">Search</button>
+</div>
 
 <section class="products">
 
